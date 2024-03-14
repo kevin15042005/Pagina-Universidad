@@ -83,25 +83,36 @@ strong .Principal{
 }
 
 .Informacion {
-    font-size: 16px; /* Tamaño de fuente para el texto de información */
+    font-size: 19px; /* Tamaño de fuente para el texto de información */
     color: #666; /* Color del texto */
     line-height: 1.5; /* Espaciado entre líneas */
-    margin: 5px; /* Espacio en la parte superior del elemento */
+    margin: 20px 8px; /* Espacio en la parte superior del elemento */
     
 }
 .Padre{
- padding: 2%;
+padding: 2%;
 display: flex;
 flex-direction: row;
-justify-content: space-between ;
+justify-content: space-around;
 gap: 2px;
 }
 .Hijo{
 width: 50%;
 font-size: 100px;
-    
 }
-
+.Video {
+    position: relative;
+    margin: 84px 0px; /* Margen en los lados */
+}
+.Mapa{
+width: 100%;
+}
+.Noticia h1{
+    padding: 4%;
+    font-size: 30px;
+    color: blue;
+    height: 20px;
+}
 
 
 
