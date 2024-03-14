@@ -1,3 +1,110 @@
-header h1{
-color: ;
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
 }
+
+body {
+    font-family: Cambria, Cochin, Georga, Times, 'Times New Roman', serif;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, white, blue, green);
+    height: 100px;
+}
+div a .llamada {
+    font-size: 25px;
+    margin-right: 8%;
+    color: white;
+    margin-left: 80%;
+    padding: 2px; 
+    
+}
+a{
+    text-decoration:none;
+}
+
+
+/* Opcionalmente, puedes ajustar la posición vertical del icono si es necesario */
+.fa-solid.fa-phone-volume {
+    vertical-align: middle; /* Alinea verticalmente el icono con el texto */
+}
+
+header h1 {
+    margin-left: 9%;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    top: 35px;
+}
+header img {
+    float: left; /* Hace que la imagen flote a la izquierda */
+    width: 100px;
+    height: auto;
+    margin-top: -20px; /* Ajusta este valor según sea necesario para subir la imagen */
+    
+}
+header div span {
+    position: static;
+    display: flexbox;
+    font-size: 25px;
+    margin: 10%;
+    padding: 10px;
+}
+
+nav {
+    padding-right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 63px;
+    background-color: black;
+}
+
+nav a{
+    color: white;
+    font-size: 20px;
+}
+div .redes{
+    background-color: aqua;
+}
+strong .Principal{
+    background-color: aqua;
+}
+
+.Principal {
+    font-size: 24px; /* Tamaño de fuente para el texto principal */
+    font-weight: bold; /* Texto en negrita */
+    color:hsl(222, 94%, 47%); /* Color del texto */
+    margin-bottom: 20px; /* Espacio entre este elemento y el siguiente */
+}
+
+.Informacion {
+    font-size: 16px; /* Tamaño de fuente para el texto de información */
+    color: #666; /* Color del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin: 5px; /* Espacio en la parte superior del elemento */
+    
+}
+.Padre{
+ padding: 2%;
+display: flex;
+flex-direction: row;
+justify-content: space-between ;
+gap: 2px;
+}
+.Hijo{
+width: 50%;
+font-size: 100px;
+    
+}
+
+
+
+
+
+
+
