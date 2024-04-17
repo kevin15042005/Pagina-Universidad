@@ -1,3 +1,5 @@
+/*Index*/
+
 *{
     margin: 0;
     padding: 0;
@@ -13,16 +15,35 @@ body {
 
 header {
     background: linear-gradient(to right, white, blue, green);
-    height: 100px;
+    height: 115px;
+
 }
-div a .llamada {
-    font-size: 25px;
-    margin-right: 8%;
+.contact {
+    display: flex;
+    align-items: flex-start; 
+    margin-left: 70%; 
+
+}
+
+.contact a.llamada {
+    font-size: 20px;
     color: white;
-    margin-left: 80%;
-    padding: 2px; 
-    
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-decoration-color: blue; 
 }
+
+.contact a.llamada:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+.contact a.llamada i {
+    font-size: 20px;
+    margin-right: 5px;
+    color: blue; /* Color del icono */
+}
+
 a{
     text-decoration:none;
 }
@@ -55,18 +76,20 @@ header div span {
     padding: 10px;
 }
 
-nav {
-    padding-right: 0%;
+nav{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 63px;
+    width: 100%;
     background-color: black;
+    text-decoration: none;
 }
 
 nav a{
     color: white;
     font-size: 20px;
+    text-decoration: none;
 }
 div .redes{
     background-color: aqua;
@@ -76,18 +99,21 @@ strong .Principal{
 }
 
 .Principal {
-    font-size: 24px; /* Tamaño de fuente para el texto principal */
+    font-size: 34px; /* Tamaño de fuente para el texto principal */
     font-weight: bold; /* Texto en negrita */
     color:hsl(222, 94%, 47%); /* Color del texto */
-    margin-bottom: 20px; /* Espacio entre este elemento y el siguiente */
 }
 
 .Informacion {
+    color: cyan;
     font-size: 19px; /* Tamaño de fuente para el texto de información */
     color: #666; /* Color del texto */
     line-height: 1.5; /* Espaciado entre líneas */
-    margin: 20px 8px; /* Espacio en la parte superior del elemento */
-    
+    padding: 20px;
+    margin: 20px; /* Espacio en la parte superior del elemento */
+    border: 2px solid green;
+    border-radius: 10px;
+    width: auto;
 }
 .Padre{
 padding: 2%;
@@ -100,22 +126,258 @@ gap: 2px;
 width: 50%;
 font-size: 100px;
 }
+
+
 .Video {
     position: relative;
     margin: 84px 0px; /* Margen en los lados */
 }
 .Mapa{
+margin: 0%;
+padding: 10px;
 width: 100%;
 }
 .Noticia h1{
     padding: 4%;
     font-size: 30px;
+    width: 1000px;
     color: blue;
-    height: 20px;
+}
+strong {
+    display: flex; /* Hace que el strong se comporte como un contenedor flex */
+    flex-direction: column; /* Apila los elementos de forma vertical */
+}
+
+.Imagenescontainer{
+    padding: 2%;
+    flex: row;
+
+}
+
+.Imagenescontainer {
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: self-end;
+
+}
+
+.imagenescontainer img {
+    max-width: 100%;
+    padding: 2%;
+    flex-wrap: nowrap;
+    height: auto;
+}
+.DatosNoticias {
+    border-radius: 10000px;
+    display: flex;
+    justify-content: space-around; /* Distribuye el espacio entre los elementos */
+}
+.DatosNoticias a{
+    color: black;
+    font-size: 20px;
+    display: block;
+
+}
+.Empresa{
+    padding: 4%;
+    font-size: 0px;
+    color: blue;
+}
+.Empresa h2{
+    font-size: 30px;
+}
+.div .Empresa .Imagenescontainer2 img{
+    display: flex;
+justify-content: space-around;
+    padding: 4%;
+}
+.Imagenescontainer2 {
+    display: flex;
+    justify-content: space-around;
+}
+.Imagenescontainer2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    
+}
+.Aliados{
+    font-size: 40px;
+}
+
+/*Estilo del footer*/
+
+
+/* Estilos para el footer */
+.Footer {
+    display: flex;
+    justify-content: center;
+    background-color: #080C3B;
+    padding: 20px;
+    color: white;
+    box-shadow: 0px 22px 22px 8px rgba(7, 31, 1, 0.642);
+}
+
+/* Estilos para los elementos dentro del footer */
+.Footer > div {
+    padding: 10px;
+    
+}
+.Horarios{
+    background-color: #006e24;
+    border: 10px;
+    padding: 10px;
+
+    
+}
+.Direccion{
+    background-color: #1913c5;
+    border: 10px;
+    padding: 10px;
+}
+.Email{
+    background-color: #006e24;
+    border: 10px;
+    padding: 10px;
+}
+.Telefono{
+    background-color: #1913c5;
+    border: 10px;
+padding: 10px;
+}
+
+.linkFooter {
+    color: white;
 }
 
 
+    /*Aqui generamos lo que es el estilo del css pagina de Nosotros */
+h1.Nosotros{
+    justify-content: right;
+    margin: 30px;
+    font-size: 30px;
+}
+div.Nosotros{
+    font-size: 20px;
+    margin-left: 10px;
+}
+div.Mision{
+    align-items:stretch;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#3207d0;
+    color:rgba(12, 189, 12, 0.457);
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+  }
 
+  #carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+}
 
+ .AliadosContenedor {
+
+    max-width: 100%;
+    max-height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+        padding: 2% 0;
+ }
+ .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.Nosotros{
+    width: 45%;
+    padding: 20px;
+    margin: 20px;
+    border: 3px solid #047e1f;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+ .Mision, .Vision, .Objetivos {
+    width: 45%;
+    padding: 20px;
+    margin: 20px;
+    border: 3px solid #047e1f;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+.Mision, .Objetivos {
+    order: 1; 
+    font-size: 20px;
+}
+.espacios{
+    list-style: none;
+}
+.espacios1{
+    margin-bottom: 10px;
+}
+.Vision {
+    margin-left: auto; /* Mueve la sección Vision hacia la derecha */
+    order: 2; /* Cambia el orden para que se muestre después de Nosotros */
+    font-size: 20px;
+}
+
+footer {
+    width: 100%;
+    margin-top: 20px;
+}
+.carousel-item img {
+    border-radius: 50%; /* Hace que las imágenes sean redondas */
+}
+.Calendario{
+    padding : 30px;
+    display-flex:center;
+}
+.mision{
+    width: 10px;
+    height: 20px;
+}
+.contenido {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.mision {
+    max-width: 200px; /* Ajusta el ancho máximo de la imagen */
+    margin-left: 20px; /* Ajusta el margen izquierdo para separar la imagen del texto */
+}
+.contenido{
+    max-width: 600px; 
+}
+.Imagenescarnicos {
+    max-width: 300px; /* Ajusta el ancho máximo según sea necesario */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+}
+
+.carousel-image {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+}
 
 
