@@ -1,18 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sesion</title>
     <link rel="stylesheet" href="Pagina.css">
+    <script src="https://kit.fontawesome.com/b263090ecf.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <div class="Sesion">
-            <input type="Email">
-            <input type="Contraseña">
-            <input type="submit">
+
+<header>
+    <h1>I.E.D.R EL ALTICO</h1>
+    <img src="EscudoC.jpg" alt="Escudo">
+</header>
+
+
+
+<nav>
+    <a href="Index.html">Inicio</a>
+    <a href="Nosotros.html">Nosotros</a>
+    <a href="Noticias.html">Noticias</a>
+    <a href="Proyecto.html">Proyectos</a>
+    <a href="Admisiones.html">Adminisiones</a>
+    <a href="Sesion.html">Login</a>
+</nav>
+
+<section class="SectionLogin"> 
+    <div class="contenedorlogin">
+        <div class="formulario">
+            <form action="#">
+                <h2>Iniciar Sesion</h2>
+
+                <div class="input-contenedor">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" required>
+                    <label for="# ">Email</label>
+                </div>
+                <div class="input-contenedor">
+                    <i class="fa-solid fa-cloud"></i>
+                    <input type="password" required>
+                    <label for="#">Contraseña</label>
+                </div>
+
+                <div class="olvidar">
+                    <label for="#">
+                        <input type="checkbox">Recordar
+                        <a href="#">Olvide mi contraseña</a>
+                    </label>
+                </div>
+            </form>
+            <div>
+                <button class="ButtonLogin">Acceder</button>    
+            </div>
         </div>
-    </header>
+        <div class="registrar">
+            <p>No tengo cuenta en este momento <a href="#">Crear una cuenta</a></p>
+        </div>
+    </div>
+</section>    
 </body>
 </html>
