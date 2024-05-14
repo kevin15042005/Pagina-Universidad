@@ -291,8 +291,15 @@ footer {
 }
 
 .linkFooter {
-  color: white;
+  color: white; /* Establece el color del texto */
+  text-decoration: none; /* Elimina la línea subrayada */
+  transition: color 0.3s ease; /* Agrega una transición suave al cambio de color */
 }
+
+.linkFooter:hover {
+  color: #ff0000; /* Cambia el color del texto al pasar el cursor sobre los enlaces */
+}
+
 
 /*Aqui generamos lo que es el estilo del css pagina de Nosotros */
 h1.Nosotros {
