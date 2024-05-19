@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="Pagina.css">
+</head>
+
+<body>
+    <header>
+        <h1>CREAR</h1>
+    </header>
+
+    <div class="administrador-main">
+        <div class="administrador-seccion">
+            <h2>Crear</h2>
+            <form class="administrador-formulario" action="program.php" method="post">
+                <label for="usuario">Usuario:</label>
+                <input type="number" name="cedula" required>
+
+                <label for="contraseña">Contraseña:</label>
+                <input type="text" name="nombre" required>
+
+                <input type="submit" name="ingresar" value="Ingresar">
+            </form>
+        </div>
+
+        <div class="administrador-seccion">
+            <h2>Leer</h2>
+            <form action="VerTabla.php" method="get">
+                <p>Da clic aquí para ver el formulario.</p>
+                <input type="submit" name="Ver" value="Ver">
+            </form>
+        </div>
+    </div>
+
+    <div class="administrador-main">
+        <div class="administrador-seccion">
+            <h2>Eliminar</h2>
+            <form action="eliminar.php" method="post">
+                <p>Ingrese el correo para eliminar todos los datos.</p>
+                <input type="text" name="cedula_eliminar">
+                <input type="submit" name="eliminar" value="Eliminar">
+            </form>
+        </div>
+
+        <div class="administrador-seccion">
+            <h2>Actualizar</h2>
+            <form action="Actualizar.php" method="post">
+                <p>Ingrese el correo para actualizar.</p>
+                <input type="number" name="cedula_actualizar">
+                <p>Ingrese la contraseña para actualizar.</p>
+                <input type="text" name="nuevo_nombre">
+                <input type="submit" name="actualizar" value="Actualizar">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

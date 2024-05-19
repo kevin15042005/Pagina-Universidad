@@ -152,6 +152,7 @@ header h1 {
   justify-content: center;
   columns: 30px;
   font-weight: normal; /* Eliminar la negrita */
+  padding: 25px;
 }
 
 header img {
@@ -496,13 +497,10 @@ div.Nosotros {
   font-size: 20px;
 }
 
-.imgNosotros{
-
-}
 
 
 .carousel-item img {
-  clip-path: circle(100%);/* Hace que las imágenes sean redondas */
+  border-radius: 50%;
 }
 .carousel-slide img {
   border-radius: 50%; /* Hace que las imágenes sean redondas */
@@ -1013,7 +1011,115 @@ text-decoration: underline;
   padding: 10px;
   border-radius: 5px;
 }
+/*Crear*/
 
+
+
+/* Estilos para el cuerpo y el contenedor del título */
+.administrador-contenedor-titulo {
+  font-family: 'Arial', sans-serif;
+  background-color: #0418ed;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.administrador-contenedor-titulo h1 {
+  margin: 0;
+  font-family: cursive;
+}
+
+/* Estilos para el contenedor principal y las secciones */
+.administrador-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.administrador-seccion {
+  background: transparent;
+  border: 5px solid #0418ed;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 45%;
+  margin-bottom: 20px; /* Espacio entre secciones */
+}
+
+.administrador-seccion h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0418ed; /* Color de los títulos */
+}
+
+/* Estilos para los formularios */
+.administrador-formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.administrador-formulario label {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #0418ed; /* Color de los textos */
+}
+
+.administrador-formulario input[type="text"],
+.administrador-formulario input[type="number"] {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #0418ed; /* Color del texto */
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 1px solid #0418ed; /* Borde inferior */
+  transition: border-bottom 0.3s; /* Animación para el borde inferior */
+  margin-bottom: 15px; /* Espacio entre elementos */
+}
+
+.administrador-formulario input[type="submit"] {
+  background-color: #0418ed;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.administrador-formulario input[type="submit"]:hover {
+  background-color: #00136c;
+}
+
+.administrador-formulario textarea {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #0418ed; /* Color del texto */
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 1px solid #0418ed; /* Borde inferior */
+  resize: vertical; /* Permitir redimensionar verticalmente */
+  transition: border-bottom 0.3s; /* Animación para el borde inferior */
+  margin-bottom: 15px; /* Espacio entre elementos */
+}
+
+.administrador-formulario input[type="file"] {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #0418ed; /* Color del texto */
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 1px solid #0418ed; /* Borde inferior */
+  transition: border-bottom 0.3s; /* Animación para el borde inferior */
+  margin-bottom: 15px; /* Espacio entre elementos */
+}
+
+.administrador-formulario input[type="file"] {
+  padding: 10px 0;
+}
 
 /*Administrador*/
 

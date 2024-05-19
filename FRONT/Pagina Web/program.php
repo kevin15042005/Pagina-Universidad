@@ -1,7 +1,6 @@
 <?php
-    $cedula = $_POST["cedula"];
-    $nombre = $_POST["nombre"];
-    $apellido = $_POST["apellido"];
+    $email = $_POST["email"];
+    $contrseña = $_POST["contrasena"];
 
     $conectar = mysqli_connect("localhost","root","","prueba");
     $insertar = "INSERT INTO datos(cedula, nombre, apellido) VALUES ($cedula, '$nombre', '$apellido')";
