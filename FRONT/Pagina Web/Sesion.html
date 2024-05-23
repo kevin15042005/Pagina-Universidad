@@ -18,7 +18,7 @@
     <a href="Nosotros.html">Nosotros</a>
     <a href="Noticias.html">Noticias</a>
     <a href="Proyecto.html">Proyectos</a>
-    <a href="Admisiones.html">Adminisiones</a>
+    <a href="Admisiones.html">Admisiones</a>
     <a href="Sesion.html">Login</a>
 </nav>
 
@@ -28,32 +28,32 @@
             <div class="formulario">
                 <h2>Iniciar Sesion</h2>
 
-                <div class="input-contenedor">
-                    <i class="fa-solid fa-envelope"></i>
-                    <input type="email" required>
-                    <label for="# ">Email</label>
-                </div>
-                <div class="input-contenedor">
-                    <i class="fa-solid fa-cloud"></i>
-                    <input type="password" required>
-                    <label for="#">Contraseña</label>
-                </div>
+                <form action="login.php" method="POST">
+                    <div class="input-contenedor">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-contenedor">
+                        <i class="fa-solid fa-cloud"></i>
+                        <input type="password" name="password" required>
+                        <label>Contraseña</label>
+                    </div>
 
-                <div class="olvidar">
-                    <label for="#">
-                        <input type="checkbox">Recordar
-                        <a href="#">Olvide mi contraseña</a>
-                    </label>
-                </div>
-            </form>
-            <div>
-                <button class="ButtonLogin">Acceder</button>    
+                    <div class="olvidar">
+                        <label>
+                            <input type="checkbox" name="remember"> Recordar
+                            <a href="usuario.html">Olvidé mi contraseña</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="ButtonLogin">Acceder</button>
+                </form>
+            </div>
+            <div class="registrar">
+                <p>No tengo cuenta en este momento <a href="usuario.html">Crear una cuenta</a></p>
             </div>
         </div>
-        <div class="registrar">
-            <p>No tengo cuenta en este momento <a href="#">Crear una cuenta</a></p>
-        </div>
-    </div>
-</section>    
+    </section>
+
 </body>
 </html>

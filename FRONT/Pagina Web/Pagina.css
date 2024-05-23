@@ -145,15 +145,28 @@ header {
 
 header h1 {
   font-family: cursive;
-  margin-left: 9%;
   font-size: 30px;
   color: white;
   display: flex;
   justify-content: center;
-  columns: 30px;
-  font-weight: normal; /* Eliminar la negrita */
+  font-weight: normal;
   padding: 25px;
+  position: relative; /* Añadimos posición relativa */
+  animation: slide-in 1s forwards; /* Animación de 1 segundo */
 }
+
+/* Keyframes para la animación */
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 
 header img {
   float: left; /* Hace que la imagen flote a la izquierda */
@@ -408,11 +421,7 @@ div.Nosotros {
   font-size: 20px;
   margin-left: 10px;
 }
-.Mision {
-  display: inline-block; /* Para que la imagen se comporte como un elemento en línea */
-  vertical-align: middle; /* Para alinear verticalmente la imagen con el texto */
-  align-items: center;
-}
+
 
 .contenido {
   padding: 2%;
@@ -474,13 +483,7 @@ div.Nosotros {
 }
 
 
-.Vision {
-  width: 100%;
-  margin: 20px;
-  border-radius: 10px;
-  font-family: sans-serif;
-  display: flex;
-}
+
 .ImgNosotros{
   width: 20%;
   border-radius: 50%;
@@ -505,10 +508,7 @@ div.Nosotros {
 .carousel-slide img {
   border-radius: 50%; /* Hace que las imágenes sean redondas */
 }
-.Calendario {
-  padding: 30px;
-  display-flex: center;
-}
+
 
 .contenido {
   display: flex;
@@ -562,22 +562,76 @@ div.Nosotros {
   width: 100%; /* La imagen ocupa todo el ancho del contenedor */
   height: auto; /* Altura automática para mantener la proporción */
 }
-.Mision{
+.Mision {
   display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  align-content: stretch;
-  justify-content: center;
-  padding: 25 0px 25px 10px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #162955;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.Vision{
+.Mision .espacios {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}n
+
+.Mision .espacios1 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.Mision .Img.Nosotros {
+  width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  border-radius: 50%; /* Redondea la imagen si es necesario */
+  margin-right: 20px;
+}
+
+.Mision .Contenedor {
+  flex: 1;
+}
+
+
+
+
+
+
+
+.Vision {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: stretch;
-  justify-content: center;
-  padding: 25px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #162955;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.Vision.espacios {
+list-style: none;
+  padding: 0;
+  margin: 0
+}
+.Vision .espacios1 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.Vision .ImgNosotros {
+  width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  border-radius: 50%; /* Redondea la imagen si es necesario */
+  margin-right: 20px;
+}
+
+.Vision .Contenedor {
+  flex: 1;
 }
 .Hijo-Objetivos{
   display: flex;
@@ -610,11 +664,50 @@ div.Nosotros {
   padding: 10px;
   font-family: cursive;
 }
-.HNosotros{
+/* Estilos para la sección Objetivos Institucionales */
+.HNosotros {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  color: #162955;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #162955;
+  padding-bottom: 5px;
+}
+
+.Hijo-Objetivos {
   display: flex;
   justify-content: space-around;
-  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #162955;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.Hijo-Objetivos img.ImgNosotros {
+  width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  border-radius: 50%; /* Redondea la imagen si es necesario */
+  margin-right: 20px;
+}
+
+.Hijo-Objetivos .espacios {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Hijo-Objetivos .espacios1 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+
+
 .Centrado{
   padding: 20px;
   display: flex;
@@ -1277,4 +1370,97 @@ text-decoration: underline;
 .administrador-noticia img {
   max-width: 100%;
   border-radius: 5px;
+}
+
+/*Usuario*/
+.usuario-contenedor-titulo h1 {
+  margin: 0;
+  font-family: cursive;
+}
+
+.usuario-main {
+  background-image: url(Img/Loging.jpg);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  font-size: 35px;
+  color: #fff;
+}
+
+.usuario-seccion {
+  background: transparent;
+  border: 5px solid #0418ed;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.usuario-seccion h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.usuario-formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-contenedor {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-contenedor label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-size: 1rem;
+  color: #fff;
+  transform: translateY(-50%);
+  transition: 0.3s ease all;
+  pointer-events: none;
+}
+
+.input-contenedor input[type="text"],
+.input-contenedor input[type="email"],
+.input-contenedor input[type="password"],
+.input-contenedor input[type="file"] {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  transition: border-bottom 0.3s;
+}
+
+.input-contenedor input:focus,
+.input-contenedor input:valid {
+  outline: none;
+  border-bottom: 2px solid #0418ed;
+}
+
+.input-contenedor input:focus ~ label,
+.input-contenedor input:valid ~ label {
+  top: -20px;
+  font-size: 0.8rem;
+}
+
+.button-crear-perfil, .button-actualizar-perfil {
+  width: 100%;
+  height: 45px;
+  border-radius: 40px;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.4s;
+  border: none;
+  color: #333;
 }

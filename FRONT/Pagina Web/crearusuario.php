@@ -1,12 +1,29 @@
-<form action="program.php" method="post">
-    <label for="cedula">Cédula:</label>
-    <input type="number" name="cedula" required="">
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $cedula_crear = $_POST["cedula_crear"];
+    $nombre_crear = $_POST["nombre_crear"];
+    $apellido_crear = $_POST["apellido_crear"];
 
-    <label for="nombre">Nombre:</label>
-    <input type="text" name="nombre" required="">
+    $conectar = mysqli_connect("localhost", "root", "", "prueba");
 
-    <label for="apellido">Apellido:</label>
-    <input type="text" name="apellido" required="">
+    if (!$conectar) {
+        die("Conexión fallida: " . mysqli_connect_error());
+    }
 
-    <input type="submit" name="ingresar" value="Ingresar">
-</form>
+    $crear = "INSERT INTO datos (cedula, nombre, apellido) VALUES (?, ?, ?)";
+    $stmt = mysqli_prepare($conectar, $crear);
+    mysqli_stmt_bind_param($stmt, "iss", $cedula_crear, $nombre_crear, $apellido_crear);
+
+    if (mysqli_stmt_execute($stmt)) {
+        echo "Usuario creado exitosamente.";
+    } else {
+        echo "Error al crear el usuario: " . mysqli_error($conectar);
+    }
+
+    mysqli_stmt_close($stmt);
+    mysqli_close($conectar);
+
+    echo "<br><br>";
+    echo "<a href='Sesion.html'>Volver al formulario</a>";
+}
+?>
