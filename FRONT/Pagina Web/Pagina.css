@@ -402,6 +402,13 @@ footer {
 
 
 /*Aqui generamos lo que es el estilo del css pagina de Nosotros */
+.Referencia {	
+  padding: 2%;
+  display: flex;
+  justify-content: center;  
+  background-color: #123;
+  color: #ffffff94;
+}
 h1.Nosotros {
   border-radius: 60px;
   justify-content: center;
@@ -862,6 +869,8 @@ list-style: none;
   display: flex;
   justify-content: center;
   color: #fff;
+  flex-direction: column;
+  padding: 2%;
 }
 .PEI{
   display: flex;
@@ -869,7 +878,7 @@ list-style: none;
 }
 .PEI p{
 color: #fff;
-font-size: auto;
+font-size: 17px;
 padding: 10px;
 width: 50%;
 
@@ -951,6 +960,7 @@ width: 50%;
 
 
 /*Loging*/
+/* Estilos para la sección Ingresos */
 .Ingresos {
   display: flex;
   justify-content: space-between; /* Para distribuir las columnas a los extremos */
@@ -968,357 +978,100 @@ width: 50%;
   margin-bottom: 20px; /* Espaciado entre elementos dentro de cada columna */
 }
 
-/* Estilos para los títulos dentro de la sección Ingresos *//* Estilos para los títulos dentro de la sección Ingresos */
-.contenedor{
+/* Estilos generales */
+body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
 }
-.SectionLogin{
+
+.SectionLogin {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background:url(Img/Loging.jpg) no-repeat ;
-  background-position: center;
-  background-size:cover ;
+  background: url(Img/Loging.jpg) no-repeat center;
+  background-size: cover;
 }
 
-.contenedorlogin{
+.contenedorlogin {
   position: relative;
   width: 400px;
-  border: 2px solid rgb(255, 255, 255, alpha);
   height: 450px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.contenedorlogin h2{
+.contenedorlogin h2 {
   font-size: 2.3rem;
   color: #fff;
   text-align: center;
 }
 
-.input-contenedor{
-  position:relative;
+.input-contenedor {
+  position: relative;
   margin: 30px 0;
   width: 300px;
-  border-bottom: 2px solid #ffff;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
 }
 
-.input-contenedor label{
+.input-contenedor label {
   position: absolute;
-  top:50%;
-  left:5px;
+  top: 50%;
+  left: 5px;
   transform: translateY(-50%);
   color: #fff;
   font-size: 1rem;
   pointer-events: none;
   transition: .6s;
   font-weight: bold;
-
 }
 
-input:focus ~ label,
-input:valid ~ label{
-  top: -15px;
-}
-
-.input-contenedor input{
-  color : #fff;
+.input-contenedor input {
+  color: #fff;
   font-weight: bold;
   width: 100%;
   height: 50px;
   background-color: transparent;
   border: none;
   outline: none;
-  font-size:1rem;
-  padding: -35px 0 5px;
-}
-.input-contenedor i{
-position: absolute;
-color: #fff;
-font-size: 1.6rem;
-top:19px;
-right: 8px;
+  font-size: 1rem;
+  padding: 5px 0;
 }
 
-.olvidar{
-  margin:-15px 0 15px;
+.input-contenedor i {
+  position: absolute;
+  color: #fff;
+  font-size: 1.6rem;
+  top: 19px;
+  right: 8px;
+}
+
+.olvidar {
+  margin: -15px 0 15px;
   font-size: .9em;
   color: #fff;
   justify-content: center;
 }
 
-.olvidar label input{
-  margin: 3px ;
+.olvidar label input {
+  margin: 3px;
 }
-.olvidar label a{
+
+.olvidar label a {
   color: #25d366;
   text-decoration: none;
   transition: .3s;
   font-size: .9em;
 }
 
-.olvidar label a:hover{
-text-decoration: underline;
-}
-.ButtonLogin{
-  width: 100%;
-  height: 45px;
-  border-radius: 40px;
-  background: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  font-size: 1rem;
-  transition: .4s;
-}
-
-button:hover{
-  opacity: .9;
-}
-
-.registrar{
-  font-size:.8rem ;
-  color: #fff;
-  text-align: center;
-  margin:20px 0 10px
-}
-
-.registrar p a{
-  text-decoration: none;
-  color:#fff;
-  font-weight: bold;
-  transition: .3s;
-}
-
-.registrar p a:hover{
-text-decoration: underline;
-}
-
-.contenedor-titulo {
-  padding: 10px;
-  border-radius: 5px;
-}
-/*Crear*/
-
-
-
-/* Estilos para el cuerpo y el contenedor del título */
-.administrador-contenedor-titulo {
-  font-family: 'Arial', sans-serif;
-  background-color: #0418ed;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-.administrador-contenedor-titulo h1 {
-  margin: 0;
-  font-family: cursive;
-}
-
-/* Estilos para el contenedor principal y las secciones */
-.administrador-main {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 20px;
-}
-
-.administrador-seccion {
-  background: transparent;
-  border: 5px solid #0418ed;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 45%;
-  margin-bottom: 20px; /* Espacio entre secciones */
-}
-
-.administrador-seccion h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #0418ed; /* Color de los títulos */
-}
-
-/* Estilos para los formularios */
-.administrador-formulario {
-  display: flex;
-  flex-direction: column;
-}
-
-.administrador-formulario label {
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-  color: #0418ed; /* Color de los textos */
-}
-
-.administrador-formulario input[type="text"],
-.administrador-formulario input[type="number"] {
-  font-size: 1rem;
-  background-color: transparent;
-  color: #0418ed; /* Color del texto */
-  width: 100%;
-  padding: 10px 5px;
-  border: none;
-  border-bottom: 1px solid #0418ed; /* Borde inferior */
-  transition: border-bottom 0.3s; /* Animación para el borde inferior */
-  margin-bottom: 15px; /* Espacio entre elementos */
-}
-
-.administrador-formulario input[type="submit"] {
-  background-color: #0418ed;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.administrador-formulario input[type="submit"]:hover {
-  background-color: #00136c;
-}
-
-.administrador-formulario textarea {
-  font-size: 1rem;
-  background-color: transparent;
-  color: #0418ed; /* Color del texto */
-  width: 100%;
-  padding: 10px 5px;
-  border: none;
-  border-bottom: 1px solid #0418ed; /* Borde inferior */
-  resize: vertical; /* Permitir redimensionar verticalmente */
-  transition: border-bottom 0.3s; /* Animación para el borde inferior */
-  margin-bottom: 15px; /* Espacio entre elementos */
-}
-
-.administrador-formulario input[type="file"] {
-  font-size: 1rem;
-  background-color: transparent;
-  color: #0418ed; /* Color del texto */
-  width: 100%;
-  padding: 10px 5px;
-  border: none;
-  border-bottom: 1px solid #0418ed; /* Borde inferior */
-  transition: border-bottom 0.3s; /* Animación para el borde inferior */
-  margin-bottom: 15px; /* Espacio entre elementos */
-}
-
-.administrador-formulario input[type="file"] {
-  padding: 10px 0;
-}
-
-/*Administrador*/
-
-
-
-
-.administrador-contenedor-titulo h1 {
-  margin: 0;
-  font-family: cursive;
-}
-
-.administrador-main {
-  background-image: url(Img/Loging.jpg);
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 20px;
-  font-size: 35px;
-  color: #fff;
-}
-
-.administrador-seccion {
-  background: transparent;
-  border: 5px solid #0418ed;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 45%;
-}
-
-.administrador-seccion h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.administrador-formulario {
-  display: flex;
-  flex-direction: column;
-}
-
-.administrador-formulario label {
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-  color: #fff;
-}
-
-.administrador-formulario input[type="text"] {
-  font-size: 1rem;
-  background-color: transparent;
-  color: #fff; /* Color del texto */
-  width: 100%;
-  padding: 10px 5px;
-  transition: border-bottom 0.3s; /* Animación para el borde inferior */
-}
-.administrador-formulario textarea {
-  font-size: 1rem;
-  background-color: transparent;
-  color: #fff; /* Color del texto */
-  width: 100%;
-  padding: 10px 5px;
-  transition: border-bottom 0.3s; /* Animación para el borde inferior */
-}
-
-.administrador-formulario input[type="file"] {
-  font-size: 1rem;
-  background-color: transparent;
-  color: #fff; /* Color del texto */
-  width: 100%;
-  padding: 10px 5px;
-  transition: border-bottom 0.3s; /* Animación para el borde inferior */
-}
-
-
-.administrador-formulario textarea {
-  resize: vertical;
-}
-
-.administrador-formulario input[type="file"] {
-  padding: 10px 0;
-}
-
-/* Estilo para el label animado */
-
-
-.input-contenedor label {
-  position: absolute;
-  top: 18px;
-  left: 10px;
-  font-size: 1.5rem;
-  pointer-events: none;
-  transition: 0.3s;
-}
-
-.input-contenedor input:focus ~ label,
-.input-contenedor textarea:focus ~ label,
-.input-contenedor input:valid ~ label,
-.input-contenedor textarea:valid ~ label {
-  top: -18px;
-  font-size: 0.8rem;
-}
-
-.input-contenedor input:focus,
-.input-contenedor textarea:focus,
-.input-contenedor input:valid,
-.input-contenedor textarea:valid {
+.olvidar label a:hover {
+  text-decoration: underline;
 }
 
 .ButtonLogin {
@@ -1330,57 +1083,79 @@ text-decoration: underline;
   cursor: pointer;
   outline: none;
   font-size: 1rem;
-  transition: 0.4s;
-  border: none;
-  color: #333; /* Color del texto */
+  transition: .4s;
 }
 
-
-
-.administrador-contenedor-noticias {
-  display: flex;
-  flex-direction: column;
+.ButtonLogin:hover {
+  opacity: .9;
 }
 
-.administrador-noticia {
-  background: #fff;
-  border: 2px solid #ddd;
-  border-radius: 5px
+.registrar {
+  font-size: .8rem;
+  color: #fff;
+  text-align: center;
+  margin: 20px 0 10px;
 }
 
-.administrador-noticia {
-  background: #fff;
-  border: 2px solid #ddd;
+.registrar p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.registrar p a:hover {
+  text-decoration: underline;
+}
+
+.contenedor-titulo {
+  padding: 10px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+}
+
+
+/*Crear*/
+
+
+
+/* Administrador */
+/* Estilos comunes para el contenedor del título */
+.usuario-seccion{
+  background-color: transparent;
+  color: #fff;
+}
+.contenedor-titulo {
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #0418ed;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
   margin-bottom: 20px;
 }
 
-.administrador-noticia h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-
-.administrador-noticia p {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-.administrador-noticia img {
-  max-width: 100%;
-  border-radius: 5px;
-}
-
-/*Usuario*/
-.usuario-contenedor-titulo h1 {
+/* Estilos específicos para la cabecera del administrador */
+.administrador-contenedor-titulo h1 {
   margin: 0;
   font-family: cursive;
+  transition: all 0.5s ease; /* Transición suave */
 }
 
-.usuario-main {
+.administrador-contenedor-titulo h1:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0418ed;
+  padding: 20px;
+  z-index: 1000;
+}
+
+/* Estilos para el contenedor principal y las secciones */
+.administrador-main {
   background-image: url(Img/Loging.jpg);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
   padding: 20px;
@@ -1388,7 +1163,7 @@ text-decoration: underline;
   color: #fff;
 }
 
-.usuario-seccion {
+.administrador-seccion {
   background: transparent;
   border: 5px solid #0418ed;
   border-radius: 5px;
@@ -1396,15 +1171,17 @@ text-decoration: underline;
   padding: 20px;
   width: 45%;
   margin-bottom: 20px;
+  flex: 1;
+  max-width: 45%; /* Para asegurarse de que no excedan el 45% del contenedor */
 }
 
-.usuario-seccion h2 {
+.administrador-seccion h2 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: #fff;
 }
 
-.usuario-formulario {
+.administrador-formulario {
   display: flex;
   flex-direction: column;
 }
@@ -1428,7 +1205,8 @@ text-decoration: underline;
 .input-contenedor input[type="text"],
 .input-contenedor input[type="email"],
 .input-contenedor input[type="password"],
-.input-contenedor input[type="file"] {
+.input-contenedor input[type="file"],
+.input-contenedor textarea {
   font-size: 1rem;
   background-color: transparent;
   color: #fff;
@@ -1440,13 +1218,17 @@ text-decoration: underline;
 }
 
 .input-contenedor input:focus,
-.input-contenedor input:valid {
+.input-contenedor input:valid,
+.input-contenedor textarea:focus,
+.input-contenedor textarea:valid {
   outline: none;
   border-bottom: 2px solid #0418ed;
 }
 
 .input-contenedor input:focus ~ label,
-.input-contenedor input:valid ~ label {
+.input-contenedor input:valid ~ label,
+.input-contenedor textarea:focus ~ label,
+.input-contenedor textarea:valid ~ label {
   top: -20px;
   font-size: 0.8rem;
 }
@@ -1460,7 +1242,146 @@ text-decoration: underline;
   cursor: pointer;
   outline: none;
   font-size: 1rem;
-  transition: 0.4s;
+  transition: background 0.3s, color 0.3s;
   border: none;
   color: #333;
+}
+
+.button-crear-perfil:hover, .button-actualizar-perfil:hover {
+  background: #0418ed;
+  color: #fff;
+}
+
+.administrador-contenedor-noticias {
+  width: 80%;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/*Usuario*/
+.usuario-body {
+ 
+  background-image: url(Img/Loging.jpg);
+
+  color: #fff;
+}
+
+.usuario-header {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+
+}
+
+
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #25d366;
+}
+
+.usuario-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  font-size: 35px;
+}
+
+.usuario-seccion {
+  background: transparent;
+  border: 5px solid #0418ed;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.usuario-seccion h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.usuario-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-wrapper h3 {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.input-wrapper input[type="text"],
+.input-wrapper input[type="password"],
+.input-wrapper select {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 2px solid #0418ed;
+  transition: border-bottom 0.3s;
+}
+
+.input-wrapper input:focus,
+.input-wrapper input:valid,
+.input-wrapper select:focus,
+.input-wrapper select:valid {
+  background-color: #080c3b;
+  border-radius: 20px;
+  outline: none;
+  border-bottom: 2px solid #25d366;
+}
+
+.input-wrapper input:focus ~ h3,
+.input-wrapper input:valid ~ h3,
+.input-wrapper select:focus ~ h3,
+.input-wrapper select:valid ~ h3 {
+  top: -20px;
+  font-size: 0.8rem;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  border-radius: 40px;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  transition: background 0.3s, color 0.3s;
+  border: none;
+  color: #333;
+}
+
+.btn:hover {
+  background: #0418ed;
+  color: #fff;
 }

@@ -1,29 +1,22 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $cedula_actualizar = $_POST["cedula_actualizar"];
-    $nuevo_nombre = $_POST["nuevo_nombre"];
-    $nuevo_apellido = $_POST["nuevo_apellido"];
+include("conexion.php");
 
-    $conectar = mysqli_connect("localhost", "root", "", "prueba");
+if(isset($_POST['actualizar'])) {
+    $usuario = $_POST['usuario_actualizar'];
+    $nuevaClave = $_POST['nueva_clave'];
 
-    if (!$conectar) {
-        die("Conexión fallida: " . mysqli_connect_error());
-    }
+    $consulta = "UPDATE datos SET clave='$nuevaClave' WHERE usuario='$usuario'";
+    $resultado = mysqli_query($conex, $consulta);
 
-    $actualizar = "UPDATE datos SET nombre = ?, apellido = ? WHERE cedula = ?";
-    $stmt = mysqli_prepare($conectar, $actualizar);
-    mysqli_stmt_bind_param($stmt, "ssi", $nuevo_nombre, $nuevo_apellido, $cedula_actualizar);
+    if($resultado) {
 
-    if (mysqli_stmt_execute($stmt)) {
-        echo "Registro actualizado exitosamente.";
+        // Redirigir a alguna página de éxito
+
+        header("Location: crearusuario.html");
+        exit();
+        
     } else {
-        echo "Error al actualizar el registro: " . mysqli_error($conectar);
+        echo '<h3 class="error">Error al actualizar el registro</h3>';
     }
-
-    mysqli_stmt_close($stmt);
-    mysqli_close($conectar);
-
-    echo "<br><br>";
-    echo "<a href='Sesion.html'>Volver al formulario</a>";
 }
 ?>

@@ -14,70 +14,64 @@
             <h1>Panel de Administración de Noticias</h1>
         </div>
     </header>
+
     <nav>
         <a href="Index.html">Inicio</a>
-        <a href="Sesion.html">Login</a>
+        <a href="crearusuario.html">Usuario</a>
+        <a href="Index.html">Cerrar Sesion</a>
     </nav>
-    <div class="administrador-main">
-        <h2>Subir Nueva Noticia</h2>
-    </div>
-    <div>
-        <main class="administrador-main">
-            <section id="add-news" class="administrador-seccion">
-                <form id="news-form" action="/upload" method="post" class="administrador-formulario">
-                    <div class="input-contenedor">
-                        <label for="title">Título:</label>
-                        <input type="text" id="title" name="title" required>
-                    </div>
 
-                    <label for="content">Contenido:</label>
-                    <div class="input-contenedor">
-                        <textarea id="content" name="content" required></textarea>
-                    </div>
-
-                    <label for="image">Imagen:</label>
-                    <div class="input-contenedor">
-                        <input type="file" id="image" name="image">
-                    </div>
-
-                    <button type="submit" class="ButtonLogin">Subir Noticia</button>
-                </form>
-            </section>
-
-            <section id="update-news" class="administrador-seccion">
-                <h2>Actualizar Noticia</h2>
-                <form id="update-news-form" action="/update" method="post" class="administrador-formulario">
-                    <div class="input-contenedor">
-                        <label for="news-id">ID de la Noticia:</label>
-                        <input type="text" id="news-id" name="news-id" required>
-                    </div>
-                    <div class="input-contenedor">
-                        <label for="new-title">Nuevo Título:</label>
-                        <input type="text" id="new-title" name="new-title" required>
-                    </div>
-
-                    <label for="new-content">Nuevo Contenido:</label>
-                    <div class="input-contenedor">
-                        <textarea id="new-content" name="new-content" required></textarea>
-                    </div>
-
-                    <label for="new-image">Nueva Imagen:</label>
-                    <div class="input-contenedor">
-                        <input type="file" id="new-image" name="new-image">
-                    </div>
-
-                    <button type="submit" class="ButtonLogin">Actualizar Noticia</button>
-                </form>
-            </section>
-
-            <section id="news-list" class="administrador-seccion">
-                <h2>Noticias Publicadas</h2>
-                <div id="news-container" class="administrador-contenedor-noticias">
-                    <!-- Aquí se insertarán las noticias publicadas -->
+    <main class="administrador-main">
+        <section id="add-news" class="administrador-seccion">
+            <h2>Subir Nueva Noticia</h2>
+            <form id="news-form" action="/upload" method="post" class="administrador-formulario">
+                <div class="input-contenedor">
+                    <input type="text" id="title" name="title" required>
+                    <label for="title">Título:</label>
                 </div>
-            </section>
-        </main>
-    </div>
+                <div class="input-contenedor">
+                    <textarea id="content" name="content" required></textarea>
+                    <label for="content">Contenido:</label>
+                </div>
+                <div class="input-contenedor">
+                    <input type="file" id="image" name="image">
+                    <label for="image">Imagen:</label>
+                </div>
+                <button type="submit" class="button-crear-perfil">Subir Noticia</button>
+            </form>
+        </section>
+
+        <section id="update-news" class="administrador-seccion">
+            <h2>Actualizar Noticia</h2>
+            <form id="update-news-form" action="/update" method="post" class="administrador-formulario">
+                <div class="input-contenedor">
+                    <input type="text" id="news-id" name="news-id" required>
+                    <label for="news-id">ID de la Noticia:</label>
+                </div>
+                <div class="input-contenedor">
+                    <input type="text" id="new-title" name="new-title" required>
+                    <label for="new-title">Nuevo Título:</label>
+                </div>
+                <div class="input-contenedor">
+                    <textarea id="new-content" name="new-content" required></textarea>
+                    <label for="new-content">Nuevo Contenido:</label>
+                </div>
+                <div class="input-contenedor">
+                    <input type="file" id="new-image" name="new-image">
+                    <label for="new-image">Nueva Imagen:</label>
+                </div>
+                <button type="submit" class="button-actualizar-perfil">Actualizar Noticia</button>
+            </form>
+        </section>
+
+        <section id="news-list" class="administrador-seccion">
+            <h2>Noticias Publicadas</h2>
+            <div id="news-container" class="administrador-contenedor-noticias">
+                <!-- Aquí se insertarán las noticias publicadas -->
+            </div>
+        </section>
+    </main>
+
 </body>
 
 </html>

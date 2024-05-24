@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USUARIO</title>
+    <link rel="stylesheet" href="Pagina.css">
+    <script src="https://kit.fontawesome.com/b263090ecf.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="usuario-body">
+
+    <header class="usuario-header">
+        <div class="usuario-contenedor-titulo">
+            <h1>Crear Perfil de Usuario</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="Index.html">Inicio</a>
+        <a href="Administrador.html">Administrador</a>
+        <a href="Index.html">Cerrar Sesion</a>
+    </nav>
+
+    <main class="usuario-main">
+        <section id="create-profile" class="usuario-seccion">
+            <h2>Formulario de Registro</h2>
+            <form class="usuario-form" action="registrar.php" method="post">
+                <div class="input-wrapper">
+                    <h3>Usuario</h3>
+                    <input type="text" name="usuario" required>
+                </div>
+                <div class="input-wrapper">
+                    <h3>Contraseña</h3>
+                    <input type="password" name="password" required>
+                </div>
+                <div class="input-wrapper">
+                    <label for="rol">Rol:</label>
+                    <select name="rol" id="rol" required>
+                        <option value="usuario">Usuario</option>
+                        <option value="administrador">Administrador</option>
+                    </select>
+                </div>
+                <input class="btn" type="submit" name="register" value="Enviar">
+            </form>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
