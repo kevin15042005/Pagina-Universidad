@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Actualizar </title>
+    <link rel="stylesheet" href="Pagina.css">
+</head>
+<body class="usuario-body">
+    <header class="usuario-header">
+        <div class="usuario-contenedor-titulo">
+            <h1>Actualizar Datos</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="Index.html">Inicio</a>
+        <a href="EliminarD.html">Eliminar</a>
+        <a href="Index.html">Cerrar Sesion</a>
+        <a href="Sesion.html">Loging</a>
+
+    </nav>
+    <main class="usuario-main">
+        <section class="usuario-seccion">
+            <h2>Actualizar Usuario</h2>
+            <form class="usuario-form" action="actualizar.php" method="post">
+                <div class="input-wrapper">
+                    <p>Ingrese el usuario para actualizar.</p>
+                    <input type="text" name="usuario_actualizar" required>
+                </div>
+                <div class="input-wrapper">
+                    <p>Ingrese la nueva clave.</p>
+                    <input type="text" name="nueva_clave" required>
+                </div>
+                <input class="btn" type="submit" name="actualizar" value="Actualizar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
