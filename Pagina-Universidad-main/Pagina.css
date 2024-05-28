@@ -1,0 +1,1466 @@
+/*Index*/
+/* Estilo para el encabezado */
+.header {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Estilo para el contenedor principal */
+.main-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto; /* Centra el contenedor principal */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para la sección de subir noticias */
+.add-news-section {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.add-news-section h2 {
+  margin-bottom: 10px;
+}
+
+.news-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-form label {
+  margin-top: 10px;
+}
+
+.news-form input,
+.news-form textarea,
+.news-form button {
+  margin-top: 5px;
+}
+
+/* Estilo para la sección de lista de noticias */
+.news-list-section {
+  width: 100%;
+}
+
+.news-list-section h2 {
+  margin-bottom: 10px;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre noticias */
+}
+
+/* Estilo general para los inputs */
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: Cambria, Cochin, Georga, Times, "Times New Roman", serif;
+  padding: 0;
+
+
+}
+
+
+.contact {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 70%;
+}
+
+.contact a.llamada {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-decoration-color: blue;
+}
+
+.contact a.llamada:hover {
+  text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+.contact a.llamada i {
+  font-size: 20px;
+  margin-right: 5px;
+  color: blue; /* Color del icono */
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Opcionalmente, puedes ajustar la posición vertical del icono si es necesario */
+.fa-solid.fa-phone-volume {
+  vertical-align: middle; /* Alinea verticalmente el icono con el texto */
+}
+
+header {
+  background: linear-gradient(to right, #ffffff, #0000ff, #008000);
+  height: 115px;
+  margin-top: -3px;
+
+}
+
+header h1 {
+  font-family: cursive;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-weight: normal;
+  padding: 25px;
+  position: relative; /* Añadimos posición relativa */
+  animation: slide-in 1s forwards; /* Animación de 1 segundo */
+}
+
+/* Keyframes para la animación */
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+header img {
+  float: left; /* Hace que la imagen flote a la izquierda */
+  width: 100px;
+  height: auto;
+  margin-top: -20px; /* Ajusta este valor según sea necesario para subir la imagen */
+}
+header div span {
+  position: static;
+  display: flexbox;
+  font-size: 25px;
+  margin: 10%;
+  padding: 10px;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 63px;
+  width: 100%;
+  background-color: #5580AA;
+}
+
+/* Estilos para los enlaces de navegación */
+nav a {
+  color: #fff; 
+  text-decoration: none; 
+  padding: 10px 15px; 
+  transition: background-color 0.5s ease; 
+}
+
+nav a:hover {
+  background-color: #21405f; 
+  border-radius: 5px; 
+}
+
+div .redes {
+  background-color: aqua;
+}
+spang .Principal {
+  background-color: aqua;
+}
+
+.Principal {
+  font-size: 34px; /* Tamaño de fuente para el texto principal */
+  font-weight: bold; /* Texto en negrita */
+  color: hsl(222, 94%, 47%); /* Color del texto */
+}
+
+.Informacion {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 19px; /* Tamaño de fuente para el texto de información */
+  line-height: 1.5; /* Espaciado entre líneas */
+  padding: 10px;
+  margin: 20px; /* Espacio en la parte superior del elemento */
+  width: 90%;
+  font-weight: normal;
+}
+.Padre {
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2px;
+}
+.Hijo {
+  width: 50%;
+  font-size: 100px;
+}
+
+.Video {
+   padding: 10px;
+  margin: 70px; /* Margen en los lados */
+}
+
+.VideoPadre{
+  padding: 50px;
+}
+.Mapa {
+  margin: 0%;
+  width: 100%;
+}
+.MapaPadre{
+margin-bottom: 30px;
+}
+.Noticia h1 {
+  padding: 4%;
+  font-size: 30px;
+  width: 1000px;
+  color: blue;
+}
+spang {
+  display: flex; /* Hace que el spang se comporte como un contenedor flex */
+  flex-direction: column; /* Apila los elementos de forma vertical */
+}
+
+.Imagenescontainer {
+  padding: 2%;
+  flex: row;
+}
+
+.Imagenescontainer {
+  padding: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: self-end;
+}
+
+.imagenescontainer img {
+  max-width: 100%;
+  padding: 2%;
+  flex-wrap: nowrap;
+  height: auto;
+}
+.DatosNoticias {
+  border-radius: 10000px;
+  display: flex;
+  justify-content: space-around; /* Distribuye el espacio entre los elementos */
+}
+.DatosNoticias a {
+  color: black;
+  font-size: 20px;
+  display: block;
+}
+.Empresa {
+  padding: 4%;
+  font-size: 0px;
+  color: blue;
+}
+.Empresa h2 {
+  font-size: 30px;
+}
+.InformacionNoticias{
+  padding: 3%;
+display: flex;
+justify-content: center;
+font-size: 20px;
+font-family: 'Font Awesome 6 Brands';
+}
+.div .Empresa .Imagenescontainer2 img {
+  display: flex;
+  justify-content: space-around;
+  padding: 4%;
+}
+.Imagenescontainer2 {
+  display: flex;
+  justify-content: space-around;
+}
+.Imagenescontainer2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+.Aliados {
+  font-family: cursive;
+  padding: 5%;
+  font-size: 40px;
+}
+.Aliados1
+{
+  padding: 0px 50px 40px 0px;
+  max-width: 40%;
+  height: auto;
+  display: block; 
+  margin: 0 auto; 
+}
+
+/*Estilo del footer*/
+
+/* Estilos para el footer */
+footer {
+  width: 97.%;
+  margin-top: 20px;
+}
+.Footer {
+  display: flex;
+  justify-content: center;
+  background-color: #5580AA;
+  padding: 20px;
+  color: white;
+}
+.FooterAdmin {
+  display: flex;
+  justify-content: center;
+  background-color: #080c3b;
+  padding-top: 20px;
+  paint-order: 20px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+/* Estilos para los elementos dentro del footer */
+.Footer > div {
+  padding: 10px;
+}
+.Horarios {
+  background-color: #006e24;
+  border: 10px;
+  padding: 10px;
+  border-radius: 10px 0px 0px 10px;
+}
+.Direccion {
+  background-color: #1913c5;
+  border: 10px;
+  padding: 10px;
+}
+.Email {
+  background-color: #006e24;
+  border: 10px;
+  padding: 10px;
+}
+.Telefono {
+  background-color: #1913c5;
+  border: 10px;
+  padding: 10px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.linkFooter {
+  color: white; /* Establece el color del texto */
+  text-decoration: none; /* Elimina la línea subrayada */
+  transition: color 0.3s ease; /* Agrega una transición suave al cambio de color */
+}
+
+.linkFooter:hover {
+  color: #ff0000; /* Cambia el color del texto al pasar el cursor sobre los enlaces */
+}
+
+
+/*Aqui generamos lo que es el estilo del css pagina de Nosotros */
+h1.Nosotros {
+  border-radius: 60px;
+  justify-content: center;
+  margin: 30px;
+  font-size: 25px;
+  color: white;
+  background-color: #080c3b;
+  width: 430px;
+}
+.NosotrosInicio {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+div.Nosotros {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+
+.contenido {
+  padding: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 13px;
+}
+
+#carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+.NosotrosCarousel{
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+.AliadosContenedor {
+  max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+  height: auto; /* Permite que la altura de la imagen se ajuste automáticamente para mantener la proporción */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  padding: 2% 0;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Nosotros {
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  padding: 20px;
+  margin: 20px;
+  font-family: sans-serif;
+}
+
+
+
+.ImgNosotros{
+  width: 20%;
+  border-radius: 50%;
+}
+
+.espacios {
+  
+  width: 50%;
+  list-style: none;
+}
+.espacios1 {
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+
+
+.carousel-item img {
+  border-radius: 50%;
+}
+.carousel-slide img {
+  border-radius: 50%; /* Hace que las imágenes sean redondas */
+}
+
+
+.contenido {
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+
+.contenido {
+  max-width: 600px;
+}
+
+.Proyecto1{
+  padding: 300px;
+  
+}
+
+.Carnicos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
+}
+
+.CarnicosTitulo{
+  display: flex;
+  justify-content: space-around;
+}
+.Lacteos{
+  display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    padding: 25px;
+}
+.Panificacion{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    padding: 25px;
+}
+.Imagenescarnicos {
+  max-width: 200px; /* Ajusta el ancho máximo según sea necesario */
+  margin: 0 auto; /* Centra el carrusel horizontalmente */
+}
+
+.carousel-image {
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+.Mision {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #162955;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Mision .espacios {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}n
+
+.Mision .espacios1 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.Mision .Img.Nosotros {
+  width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  border-radius: 50%; /* Redondea la imagen si es necesario */
+  margin-right: 20px;
+}
+
+.Mision .Contenedor {
+  flex: 1;
+}
+
+
+
+
+
+
+
+.Vision {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #162955;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.Vision.espacios {
+list-style: none;
+  padding: 0;
+  margin: 0
+}
+.Vision .espacios1 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.Vision .ImgNosotros {
+  width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  border-radius: 50%; /* Redondea la imagen si es necesario */
+  margin-right: 20px;
+}
+
+.Vision .Contenedor {
+  flex: 1;
+}
+.Hijo-Objetivos{
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: stretch;
+  justify-content: center;
+  padding: 25px;
+}
+.experiencia1 {
+  display: flex; /* Hacer que los elementos dentro de .experiencia1 se comporten como flexbox */
+  align-items: center; /* Alinear verticalmente los elementos */
+  width: 100%;
+}
+.experiencia1 {
+  display: flex; /* Hacer que los elementos dentro de .experiencia1 se comporten como flexbox */
+  align-items: center; /* Alinear verticalmente los elementos */
+  width: 100%;
+}
+
+.experiencia1 img {
+  margin-right: 20px; /* Espacio entre la imagen y el párrafo */
+}
+.experienciapadre{
+  display: flex;
+  justify-content: center;
+}
+.experiencia {
+  font-size: auto;
+  width: 60%;
+  padding: 10px;
+  font-family: cursive;
+}
+/* Estilos para la sección Objetivos Institucionales */
+.HNosotros {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  color: #162955;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #162955;
+  padding-bottom: 5px;
+}
+
+.Hijo-Objetivos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #162955;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Hijo-Objetivos img.ImgNosotros {
+  width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  border-radius: 50%; /* Redondea la imagen si es necesario */
+  margin-right: 20px;
+}
+
+.Hijo-Objetivos .espacios {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Hijo-Objetivos .espacios1 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+
+
+.Centrado{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+/* Estilos CSS para el diseño */
+.container {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.text {
+  flex: 1; /* El texto ocupa todo el espacio disponible */
+  padding: 20px; /* Añade espacio alrededor del texto */
+}
+
+.carousel {
+  flex: 1; /* El carrusel ocupa todo el espacio disponible */
+  max-width: 50%; /* Limita el ancho del carrusel para evitar que ocupe todo el espacio */
+  margin: 0 auto; /* Centra horizontalmente el carrusel */
+}
+
+.carousel-image {
+  max-width: 100%; /* Las imágenes se ajustan automáticamente al ancho del carrusel */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+.noticias {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+}
+
+.noticias-padre {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.noticias {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background: url(Img/Colegio5.jpeg );
+  background-size: cover;
+  background-position: center;
+}.noticias {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(Img/Colegio3.jpeg);
+    background-size: contain;
+    background-position: center;
+}
+
+/* Estilo para las columnas */
+.noticias .et_pb_column {
+    margin: 0 auto; /* Centra las columnas horizontalmente */
+}
+
+.ColumnaNoticias {
+  display: ruby-text;
+}
+.Padre-noticias {
+  width: 350px;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid #006e24;
+}
+.Padre-noticias h3 {
+  padding: 4%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+.Padre-noticias p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: auto;
+}
+
+.PadreProyectoPadding{
+  padding: 2%;
+}
+.PadreProyecto{
+  background-image: url(Img/Colegio2.jpeg);
+  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: auto; /* Tamaño automático */
+    background-position: center;
+    background-repeat: repeat; 
+    color: #fff;
+    height: 90%;
+}
+.PadreProyecto h1 {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.Proyecto1{
+  padding: 20px;
+  
+}
+
+.ParrafoInformacion {
+  padding: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  width: 50%; /* Ajusta el ancho como desees */
+  margin: auto; /* Centra el párrafo horizontalmente */
+}
+
+/*Admisiones*/
+
+.ImgContenedorAdmisiones{
+  padding: 5%;
+  background-color: #080c3b
+}
+.ImgAdmisiones{
+  background-image: url(Img/EmblemaColegio.jpeg);
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo de color con transparencia */
+  background-blend-mode: overlay; /* Mezcla el fondo de color con la imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  padding: 10%;
+}
+.PreguntasAdmisiones{
+  color: #fff;
+  padding:4%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold; 
+}
+.PreguntasAdmisiones1{
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding:3%;
+}
+
+.PEISUB{
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.PEI{
+  display: flex;
+  justify-content: center;
+}
+.PEI p{
+color: #fff;
+font-size: auto;
+padding: 10px;
+width: 50%;
+
+}
+
+.uno h3{
+  color: #0000ff;
+}
+.uno{
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  color: #fff;
+}
+.unospan{
+  width: 29%;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dos h3{
+  color: #0000ff;
+}
+.dos{
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 63%;
+  color: #fff;
+}
+.dosspan{
+  width: 50%;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tres h3{
+  color: #0000ff;
+}
+.tres{
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  color: #fff;
+}
+.tresspan{
+  width: 29%;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cuatro  h3{
+  color: #0000ff;
+}
+
+.cuatro{
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 50%;
+  color: #fff;
+}
+.cuatrospan{
+  width: 50%;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Loging*/
+.Ingresos {
+  display: flex;
+  justify-content: space-between; /* Para distribuir las columnas a los extremos */
+  padding: 20px;
+  background-color: #162955;
+  text-align: left;
+  margin-bottom: 40px; /* Espacio adicional al final de la sección de ingresos */
+}
+
+.columna {
+  flex-basis: 48%; /* Ancho de las columnas */
+}
+
+.columna > div {
+  margin-bottom: 20px; /* Espaciado entre elementos dentro de cada columna */
+}
+
+/* Estilos para los títulos dentro de la sección Ingresos *//* Estilos para los títulos dentro de la sección Ingresos */
+.contenedor{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+.SectionLogin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background:url(Img/Loging.jpg) no-repeat ;
+  background-position: center;
+  background-size:cover ;
+}
+
+.contenedorlogin{
+  position: relative;
+  width: 400px;
+  border: 2px solid rgb(255, 255, 255, alpha);
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contenedorlogin h2{
+  font-size: 2.3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.input-contenedor{
+  position:relative;
+  margin: 30px 0;
+  width: 300px;
+  border-bottom: 2px solid #ffff;
+}
+
+.input-contenedor label{
+  position: absolute;
+  top:50%;
+  left:5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: .6s;
+  font-weight: bold;
+
+}
+
+input:focus ~ label,
+input:valid ~ label{
+  top: -15px;
+}
+
+.input-contenedor input{
+  color : #fff;
+  font-weight: bold;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size:1rem;
+  padding: -35px 0 5px;
+}
+.input-contenedor i{
+position: absolute;
+color: #fff;
+font-size: 1.6rem;
+top:19px;
+right: 8px;
+}
+
+.olvidar{
+  margin:-15px 0 15px;
+  font-size: .9em;
+  color: #fff;
+  justify-content: center;
+}
+
+.olvidar label input{
+  margin: 3px ;
+}
+.olvidar label a{
+  color: #25d366;
+  text-decoration: none;
+  transition: .3s;
+  font-size: .9em;
+}
+
+.olvidar label a:hover{
+text-decoration: underline;
+}
+.ButtonLogin{
+  width: 100%;
+  height: 45px;
+  border-radius: 40px;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  transition: .4s;
+}
+
+button:hover{
+  opacity: .9;
+}
+
+.registrar{
+  font-size:.8rem ;
+  color: #fff;
+  text-align: center;
+  margin:20px 0 10px
+}
+
+.registrar p a{
+  text-decoration: none;
+  color:#fff;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.registrar p a:hover{
+text-decoration: underline;
+}
+
+.contenedor-titulo {
+  padding: 10px;
+  border-radius: 5px;
+}
+/*Crear*/
+
+
+
+/* Estilos para el cuerpo y el contenedor del título */
+.administrador-contenedor-titulo {
+  font-family: 'Arial', sans-serif;
+  background-color: #0418ed;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.administrador-contenedor-titulo h1 {
+  margin: 0;
+  font-family: cursive;
+}
+
+/* Estilos para el contenedor principal y las secciones */
+.administrador-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.administrador-seccion {
+  background: transparent;
+  border: 5px solid #a4acff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+  padding: 20px;
+  width: 45%;
+  margin-bottom: 20px; /* Espacio entre secciones */
+}
+
+.administrador-seccion h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0418ed; /* Color de los títulos */
+}
+
+/* Estilos para los formularios */
+.administrador-formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.administrador-formulario label {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #0418ed; /* Color de los textos */
+}
+
+.administrador-formulario input[type="text"],
+.administrador-formulario input[type="number"] {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #0418ed; /* Color del texto */
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 1px solid #0418ed; /* Borde inferior */
+  transition: border-bottom 0.3s; /* Animación para el borde inferior */
+  margin-bottom: 15px; /* Espacio entre elementos */
+}
+
+.administrador-formulario input[type="submit"] {
+  background-color: #0418ed;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.administrador-formulario input[type="submit"]:hover {
+  background-color: #00136c;
+}
+
+.administrador-formulario textarea {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #0418ed; /* Color del texto */
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 1px solid #0418ed; /* Borde inferior */
+  resize: vertical; /* Permitir redimensionar verticalmente */
+  transition: border-bottom 0.3s; /* Animación para el borde inferior */
+  margin-bottom: 15px; /* Espacio entre elementos */
+}
+
+.administrador-formulario input[type="file"] {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #0418ed; /* Color del texto */
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 1px solid #0418ed; /* Borde inferior */
+  transition: border-bottom 0.3s; /* Animación para el borde inferior */
+  margin-bottom: 15px; /* Espacio entre elementos */
+}
+
+.administrador-formulario input[type="file"] {
+  padding: 10px 0;
+}
+
+/*Administrador*/
+
+
+
+
+.administrador-contenedor-titulo h1 {
+  margin: 0;
+  font-family: cursive;
+}
+
+.administrador-main {
+  background-image: url(Img/Loging.jpg);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  font-size: 35px;
+  color: #fff;
+}
+
+.administrador-seccion {
+  background: transparent;
+  border: 5px solid #0418ed;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 45%;
+}
+
+.administrador-seccion h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.administrador-formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.administrador-formulario label {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.administrador-formulario input[type="text"] {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #fff; /* Color del texto */
+  width: 100%;
+  padding: 10px 5px;
+  transition: border-bottom 0.3s; /* Animación para el borde inferior */
+}
+.administrador-formulario textarea {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #fff; /* Color del texto */
+  width: 100%;
+  padding: 10px 5px;
+  transition: border-bottom 0.3s; /* Animación para el borde inferior */
+}
+
+.administrador-formulario input[type="file"] {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #fff; /* Color del texto */
+  width: 100%;
+  padding: 10px 5px;
+  transition: border-bottom 0.3s; /* Animación para el borde inferior */
+}
+
+
+.administrador-formulario textarea {
+  resize: vertical;
+}
+
+.administrador-formulario input[type="file"] {
+  padding: 10px 0;
+}
+
+/* Estilo para el label animado */
+
+
+.input-contenedor label {
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  font-size: 1.5rem;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input-contenedor input:focus ~ label,
+.input-contenedor textarea:focus ~ label,
+.input-contenedor input:valid ~ label,
+.input-contenedor textarea:valid ~ label {
+  top: -18px;
+  font-size: 0.8rem;
+}
+
+.input-contenedor input:focus,
+.input-contenedor textarea:focus,
+.input-contenedor input:valid,
+.input-contenedor textarea:valid
+
+
+.ButtonLogin {
+  width: 100%;
+  height: 45px;
+  border-radius: 40px;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.4s;
+  border: none;
+  color: #333; /* Color del texto */
+}
+
+
+
+.administrador-contenedor-noticias {
+  display: flex;
+  flex-direction: column;
+}
+
+.administrador-noticia {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 5px
+}
+
+.administrador-noticia {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.administrador-noticia h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.administrador-noticia p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.administrador-noticia img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/*Usuario*/
+.usuario-contenedor-titulo h1 {
+  margin: 0;
+  font-family: cursive;
+}
+
+.usuario-main {
+  background-image: url(Img/Loging.jpg);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  font-size: 35px;
+  color: #fff;
+}
+
+.usuario-seccion {
+  background: transparent;
+  border: 5px solid #0418ed;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.usuario-seccion h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.usuario-formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-contenedor {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-contenedor label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-size: 1rem;
+  color: #fff;
+  transform: translateY(-50%);
+  transition: 0.3s ease all;
+  pointer-events: none;
+}
+
+.input-contenedor input[type="text"],
+.input-contenedor input[type="email"],
+.input-contenedor input[type="password"],
+.input-contenedor input[type="file"] {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  transition: border-bottom 0.3s;
+}
+
+.input-contenedor input:focus,
+.input-contenedor input:valid {
+  outline: none;
+  border-bottom: 2px solid #0418ed;
+}
+
+.input-contenedor input:focus ~ label,
+.input-contenedor input:valid ~ label {
+  top: -20px;
+  font-size: 0.8rem;
+}
+
+.button-crear-perfil, .button-actualizar-perfil {
+  width: 100%;
+  height: 45px;
+  border-radius: 40px;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.4s;
+  border: none;
+  color: #333;
+}

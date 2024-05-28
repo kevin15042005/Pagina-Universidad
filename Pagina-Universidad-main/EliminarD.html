@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Eliminar </title>
+    <link rel="stylesheet" href="Pagina.css">
+</head>
+<body class="usuario-body">
+    <header class="usuario-header">
+        <div class="usuario-contenedor-titulo">
+            <h1>Eliminar Datos</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="Index.html">Inicio</a>
+        <a href="actulizarD.html">Actualizar</a>
+        <a href="Index.html">Cerrar Sesion</a>
+        <a href="Sesion.html">Loging</a>
+    </nav>
+    <main class="usuario-main">
+        <section class="usuario-seccion">
+            <h2>Eliminar Usuario</h2>
+            <form class="usuario-form" action="eliminar.php" method="post">
+                <div class="input-wrapper">
+                    <p>Ingrese el usuario para eliminar el registro.</p>
+                    <input type="text" name="usuario_eliminar" required>
+                </div>
+                <input class="btn" type="submit" name="eliminar" value="Eliminar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
